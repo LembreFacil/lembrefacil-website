@@ -2,4 +2,29 @@
     height: calc(100vh - 156px);
     background-color: red;
     width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.main-home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 20px;
+}
+
+.main-home-text {
+    width: 50%;
+    background-color: white;
+}
+
+.main-home-image {
+    width: 50%;
+    background-color: black;
+}
+
+.main-home-image img {
+    width: 100%;
 }

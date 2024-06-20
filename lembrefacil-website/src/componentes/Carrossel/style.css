@@ -1,0 +1,36 @@
+/* Estilo customizado para o carrossel */
+.custom-carousel .carousel .slide .legend.custom-legend {
+    background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    color: white; /* Texto branco */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 1.2em; /* Aumentar tamanho da fonte */
+    border-radius: 10px; /* Bordas arredondadas */
+    bottom: 20px; /* Ajustar posição vertical */
+}
+
+.custom-carousel .carousel .control-arrow {
+    background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    border-radius: 50%; /* Bordas arredondadas */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-carousel .carousel .control-prev.control-arrow {
+    left: 10px; /* Ajustar posição horizontal */
+}
+
+.custom-carousel .carousel .control-next.control-arrow {
+    right: 10px; /* Ajustar posição horizontal */
+}
+
+.custom-carousel .carousel .carousel-status {
+    top: 10px; /* Ajustar posição vertical */
+    right: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white; /* Texto branco */
+}
