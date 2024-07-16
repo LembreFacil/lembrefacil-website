@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from '../../assets/logo 1.png';
-import Carrossel from '../Carrossel';
+import homemIdoso from '../../assets/homemIdoso.png'
 
 import './style.css';
 
@@ -9,11 +9,13 @@ function Home() {
         <>
         <main className='main-home'>
             <section className='main-home-content'>
-                <aside className='main-home-text'>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor labore vitae sed ipsa eveniet tempora voluptates vel? Voluptatem quasi quibusdam at quis, soluta error incidunt tenetur reprehenderit sunt, culpa a!</p>
-                </aside>
-                <aside className='main-home-image'>
-                    <Carrossel/>
+                <aside className='main-home-action'>
+                    <div className='main-home-action-topo'>
+                        <img src={logo} alt="" className='logo-imagem'/>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis adipisci enim suscipit tempora, architecto voluptatibus maxime a minima quaerat vitae repellat labore, beatae magnam natus quis veniam qui at earum.</p>
+                        <a href="" className='botao-action'>BAIXE JÁ</a>
+                    </div>
+                    <img src={homemIdoso} alt=""  className='pessoa-imagem'/>
                 </aside>
             </section>
         </main>

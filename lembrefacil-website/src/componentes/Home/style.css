@@ -1,30 +1,75 @@
 .main-home {
     height: calc(100vh - 156px);
-    background-color: red;
     width: 100%;
     align-items: center;
     justify-content: center;
     display: flex;
+    background-color: #0E3C3E;
+    width: 100%;
+    border-radius: 20px;
 }
 
 .main-home-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     gap: 20px;
 }
 
-.main-home-text {
-    width: 50%;
-    background-color: white;
+.pessoa-imagem {
+    width: 100%;
+    max-width: 545px;
 }
 
-.main-home-image {
-    width: 50%;
-    background-color: black;
+.logo-imagem {
+    width: 100%;
+    max-width: 350px;
+}
+
+.main-home-text {
+    width: 20%;
+    background-color: white;
+    padding: 20px;
+}
+
+.main-home-text p {
+    font-size: 20px;
+}
+
+.main-home-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.main-home-action-topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main-home-action-topo p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
 }
 
 .main-home-image img {
     width: 100%;
 }
+
+.botao-action {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
