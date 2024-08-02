@@ -4,18 +4,19 @@
     justify-content: center;
     align-items: center;
     /* margin-top: 10px; */
-    height: 150px;
+    height: 100px;
   }
   
   .menu-header {
     display: flex;
     align-items: center;
     width: 95%;
+    height: 50px;
     padding: 20px;
     background-color: #0E3C3E;
     color: white;
     border-radius: 20px;
-    font-size: 18px;
+    font-size: 16px;
     justify-content: center;
   }
   
