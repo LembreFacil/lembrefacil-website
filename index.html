@@ -44,10 +44,10 @@
         <div class="header__form">
           <form>
             <h4>Receba informações e novidades!</h4>
-            <input type="text" placeholder="Nome Completo" />
-            <input type="text" placeholder="Email" />
-            <input type="text" placeholder="Número de Celular" />
-            <button class="btn form__btn">Cadastre-se</button>
+            <input type="text" name="nome" placeholder="Nome Completo"  required/>
+            <input type="text" name="email" placeholder="Email" required/>
+            <input type="text" name="celular" placeholder="Número de Celular" required/>
+            <button type="submit" class="btn form__btn" id="loading">Cadastre-se</button>
           </form>
         </div>
       </div>
@@ -228,5 +228,6 @@
         </div>
       </div>
     </footer>
+    <script src="form.js"></script>
   </body>
 </html>
