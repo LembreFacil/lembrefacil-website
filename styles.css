@@ -66,7 +66,7 @@ header {
       rgba(18, 172, 142, 0.9),
       rgba(18, 172, 142, 0.7)
     ),
-    url("assets/header.jpg");
+    url("assets/fundo-home.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -343,7 +343,7 @@ header {
 .doctors__grid {
   margin-top: 4rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
 
