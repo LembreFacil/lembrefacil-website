@@ -13,14 +13,14 @@ const emailSend = () => {
     const email = document.querySelector('input[name=email]').value;
     const celular = document.querySelector('input[name=celular]').value;
 
-    return fetch("https://formsubmit.co/ajax/oliveiradasilvaigor74@gmail.com", {
+    return fetch("https://formsubmit.co/ajax/lembrefacil.org@gmail.com", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
             subject: "LembreFácil - Landing Page",
-            name: "Novo cliente cadastrado na Newsletter - Landing Page",
+            name: "Novo paciente cadastrado na Newsletter - Landing Page",
             message: `Nome: ${nome}\nEmail: ${email}\nNúmero: ${celular}`
         })
     })
