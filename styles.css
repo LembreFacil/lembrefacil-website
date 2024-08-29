@@ -15,6 +15,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 .section__container {
@@ -31,13 +32,18 @@
 }
 
 .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
   padding: 0.75rem 2rem;
   outline: none;
   border: none;
   font-size: 1rem;
   white-space: nowrap;
+  font-weight: 500;
   color: var(--white);
-  background-color: var(--secondary-color);
+  background-color: #FF6F3F;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -177,7 +183,8 @@ header {
 }
 
 .service__header__content p {
-  max-width: 600px;
+  max-width: 700px;
+  text-align: justify;
   color: var(--text-light);
 }
 
@@ -204,24 +211,28 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  
 }
 
 .service__card {
+  display: flex;
+  flex-direction: column;
   padding: 2rem;
   text-align: center;
   border-radius: 10px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  justify-content: space-between;
 }
 
 .service__card span {
   display: inline-block;
   margin-bottom: 1rem;
-  padding: 10px 20px;
+  padding: 5px 10px;
   font-size: 2.5rem;
   color: var(--primary-color);
   background-color: var(--primary-color-light);
-  border-radius: 100%;
+  border-radius: 5px;
   transition: 0.3s;
 }
 
@@ -259,6 +270,7 @@ header {
 
 .about__content p {
   margin-bottom: 1rem;
+  text-align: justify;
   color: var(--text-light);
 }
 
@@ -283,6 +295,7 @@ header {
 
 .why__content p {
   color: var(--text-light);
+  text-align: justify;
 }
 
 .why__grid {
