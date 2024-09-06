@@ -326,6 +326,7 @@ header {
   color: var(--text-light);
 }
 
+
 .doctors__header {
   display: flex;
   align-items: center;
@@ -371,7 +372,45 @@ header {
 .doctors__card__image {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  object-fit: cover;
+  background-color: aqua;
 }
+
+.swiper-container {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* .swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+} */
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--primary-color); /* Ou qualquer cor desejada para o bullet ativo */
+}
+
 
 .doctors__socials {
   position: absolute;
@@ -396,6 +435,8 @@ header {
   transition: 0.3s;
   text-decoration: none;
 }
+
+
 
 .doctors__socials span > a {
   text-decoration: none;
@@ -493,7 +534,6 @@ header {
   color: var(--white);
   cursor: pointer;
 }
-
 
 @media (width < 900px) {
   .service__grid {
