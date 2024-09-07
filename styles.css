@@ -367,15 +367,22 @@ header {
   border-radius: 10px;
   cursor: pointer;
   overflow: hidden;
+  width: 200px;
+  height: 200px;
+
 }
 
 .doctors__card__image {
   position: relative;
   overflow: hidden;
   width: 100%;
-  object-fit: cover;
+  max-width: 400px;
+  height: 100%;
+  max-height: 350px;
   background-color: aqua;
+  
 }
+
 
 .swiper-container {
   position: relative;
@@ -627,5 +634,40 @@ header {
 
   to {
       transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .doctors__card {
+    max-width: 100%; /* Remove a largura máxima para telas menores */
+    height: auto; /* Garante que a altura se ajuste automaticamente */
+    aspect-ratio: auto; /* Remove a proporção fixa para telas menores */
+  }
+
+  .doctors__socials {
+    bottom: 0.5rem; /* Ajusta a posição dos ícones sociais */
+  }
+
+  .doctors__socials span {
+    font-size: 1.2rem; /* Reduz o tamanho da fonte */
+  }
+
+  .doctors__card h4 {
+    font-size: 1rem; /* Reduz o tamanho da fonte do título */
+  }
+
+  .doctors__card p {
+    font-size: 0.9rem; /* Reduz o tamanho da fonte do texto */
+  }
+}
+
+@media (max-width: 480px) {
+  .doctors__card {
+    max-width: 100%; /* Remove a largura máxima para dispositivos móveis */
+  }
+
+  .doctors__socials span {
+    padding: 4px 8px; /* Reduz o padding para dispositivos móveis */
+    font-size: 1rem; /* Reduz o tamanho da fonte */
   }
 }
