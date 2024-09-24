@@ -28,9 +28,9 @@ app.post('/send-email', (req, res) => {
 
     const emailParaAdm = {
         from: 'LembreFácil <lembrefacil.org@gmail.com>',
-        to: 'oliveiradasilvaigor74@gmail.com',
-        subject: 'Novo Cliente Cadastrado - LembreFácil',
-        html: `<h1>Novo cliente cadastrado</h1>
+        to: 'lembrefacil.org@gmail.com',
+        subject: 'Novo Usuario Cadastrado - LembreFácil',
+        html: `<h1>Novo usuario cadastrado</h1>
                <p><strong>Nome:</strong> ${nome}</p>
                <p><strong>Email:</strong> ${email}</p>
                <p><strong>Celular:</strong> ${celular}</p>`,
@@ -43,11 +43,9 @@ app.post('/send-email', (req, res) => {
         subject: 'Confirmação de Cadastro - LembreFácil',
         html: `<h1>Bem-vindo(a) ao LembreFácil</h1>
                <p>Obrigado por se cadastrar em nossa plataforma!</p>
-               <p><strong>Nome:</strong> ${nome}</p>
-               <p><strong>Email:</strong> ${email}</p>
-               <p><strong>Celular:</strong> ${celular}</p>
+               <p><strong>${nome}!</strong> </p>
                <p>Estamos felizes em tê-lo(a) conosco!</p>`,
-        text: `Obrigado por se cadastrar no LembreFácil! Nome: ${nome}, Email: ${email}, Celular: ${celular}`
+        text: `Obrigado por se cadastrar no LembreFácil! ${nome}!`
     };
 
     transport.sendMail(emailParaAdm)
