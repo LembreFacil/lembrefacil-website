@@ -1,9 +1,11 @@
 const button = document.getElementById('loading');
 
+// Starta animação de loading botão cadastrado
 const addLoading = () => {
     button.innerHTML = '<img src="assets/loading-new.png" alt="" class="loading">';
 }
 
+//  Remove animação do loading
 const removeLoading = () => {
     button.innerHTML = 'Cadastrado';
 }
@@ -13,15 +15,15 @@ const emailSend = () => {
     const email = document.querySelector('input[name=email]').value;
     const celular = document.querySelector('input[name=celular]').value;
 
-    return fetch("https://formsubmit.co/ajax/oliveiradasilvaigor74@gmail.com", {
+    return fetch("http://localhost:3000/send-email", {  // Altera parar a URL hospedada futuramente
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            subject: "LembreFácil - Landing Page",
-            name: "Novo cliente cadastrado na Newsletter - Landing Page",
-            message: `Nome: ${nome}\nEmail: ${email}\nNúmero: ${celular}`
+            nome: nome,   // Envie os dados corretamente
+            email: email,
+            celular: celular
         })
     })
     .then(response => response.json())
@@ -38,6 +40,4 @@ const handleSubmit = (event) => {
     });
 }
 
-
 document.querySelector('form').addEventListener('submit', handleSubmit);
-
