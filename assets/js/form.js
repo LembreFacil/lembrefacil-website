@@ -15,8 +15,9 @@ const emailSend = () => {
     const email = document.querySelector('input[name=email]').value;
     const celular = document.querySelector('input[name=celular]').value;
 
-    return fetch("http://localhost:3000/send-email", {  // Altera parar a URL hospedada futuramente
+    return fetch("https://lembrefacil-newsletter-api-production.up.railway.app/", {  // Altera parar a URL hospedada futuramente
         method: "POST",
+        mode: 'no-cors',
         headers: {
             "Content-Type": "application/json"
         },
