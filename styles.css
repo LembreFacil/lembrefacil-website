@@ -588,7 +588,7 @@ header {
   }
 }
 
-@media (width < 780px) {
+@media (width < 970px) {
   .nav__links {
     display: none;
   }
